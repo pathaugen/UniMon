@@ -4,6 +4,6 @@
 
 UniMon is a solution for unifying agent and agent-less servers together under a unified dashboard.
 
-* Code hosted on GitHub: <https://github.com/pathaugen/unimon>
-* Travis CI for builds: <>
+* Code publicly hosted on GitHub: <https://github.com/pathaugen/unimon>
+* Utilizing Travis CI for builds: <https://travis-ci.org/pathaugen/unimon>
 
