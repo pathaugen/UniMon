@@ -2,6 +2,8 @@
 # https://docs.travis-ci.com/user/languages/python/
 # https://travis-ci.org/pathaugen/unimon
 
+# https://github.com/GoogleCloudPlatform/continuous-deployment-demo/blob/master/.travis.yml
+
 language: python
 
 python:
