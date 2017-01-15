@@ -25,4 +25,6 @@ python:
 #  - pip install -r requirements.txt
 
 # command to run tests
-script: pytest # or py.test for Python versions 3.5 and below
+script:
+  #- pytest
+  - py.test # Works for Python versions 3.5 and below
