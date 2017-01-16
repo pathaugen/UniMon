@@ -11,7 +11,7 @@ script:
 - py.test
 deploy:
   provider: gae
-  keyfile: client-secret.json.enc
+  keyfile: client-secret.json
   project: pmd-unimon
   no_promote: true
 before_install:
