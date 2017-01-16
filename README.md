@@ -10,21 +10,23 @@ UniMon is a solution for unifying agent and agent-less servers together under a 
 
 ---------- ---------- ---------- ---------- ----------
 
-External Backend Libraries and Resources Included in Application
+External Backend Libraries and Resources Utilized in Application
 ----------------------------------------------------------------
 
-* GAE LIBRARY
-* AWS LIBRARY
+* AWS CloudWatch <https://aws.amazon.com/cloudwatch/>
+* AWS Boto 3 Python SDK <https://github.com/boto/boto3>
+* GAE Stackdriver <https://cloud.google.com/monitoring/> (API <https://cloud.google.com/monitoring/api/v3/>)
 
 ---------- ---------- ---------- ---------- ----------
 
-External Frontend Libraries and Resources Included in Application
+External Frontend Libraries and Resources Utilized in Application
 ----------------------------------------------------------------
 
 * Font Awesome 4.7.0: <http://fontawesome.io/>
 * jQuery 3.1.1: <http://jquery.com/>
 * jQuery UI 1.12.1: <http://jqueryui.com/>
-* VISUALIZATION LIBRARY
+* Chart.js <http://www.chartjs.org/> (e.g. <http://www.chartjs.org/docs/#line-chart-introduction>)
+* (future if budgeted) Highcharts <http://www.highcharts.com/> (e.g. <http://www.highcharts.com/demo/line-time-series/dark-unica>)
 
 ---------- ---------- ---------- ---------- ----------
 
@@ -33,14 +35,14 @@ Feature List
 
 * Backend:
   * Custom backend in Python hosted on Google App Engine
-  * Utilization of pure HTML/CSS/JS to keep future updates to app simple
-  * Login via Google credentials to backend dashboard
+  * Utilization of pure HTML/CSS/JS to keep frontend updates to app simple
+  * Login via Google credentials to internal dashboard
   * Dashboard for viewing monitoring data
   * Continuous Integration via Travis CI autodeploys on GitHub master branch checkin
 
 * Frontend:
   * Responsive design
-  * xxx library for visualization of data
+  * Chart.js library for visualization of data
 
 ---------- ---------- ---------- ---------- ----------
 
