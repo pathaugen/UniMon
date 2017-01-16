@@ -1,0 +1,30 @@
+
+application: pmd-unimon
+
+# ---------- ---------- ---------- ---------- ----------
+
+version: 2017-01-xx
+# TODO:
+# xxx
+# Major Changes:
+# xxx
+# Minor Changes:
+# xxx
+
+# ---------- ---------- ---------- ---------- ----------
+
+runtime: python27
+api_version: 1
+threadsafe: true
+
+# ---------- ---------- ---------- ---------- ----------
+
+handlers:
+- url: /css
+  static_dir: resources/css
+- url: /html
+  static_dir: resources/html
+- url: /js
+  static_dir: resources/js
+- url: /.*
+  script: main.application
