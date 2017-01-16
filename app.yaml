@@ -1,21 +1,22 @@
 
 application: pmd-unimon
+runtime: python27
+api_version: 1
+threadsafe: true
 
 # ---------- ---------- ---------- ---------- ----------
 
 version: 2017-01-xx
+#
 # TODO:
 # xxx
+#
 # Major Changes:
-# xxx
+# Framework of application developed
+# Travis CI builds and autodeploy to GAE
+#
 # Minor Changes:
 # xxx
-
-# ---------- ---------- ---------- ---------- ----------
-
-runtime: python27
-api_version: 1
-threadsafe: true
 
 # ---------- ---------- ---------- ---------- ----------
 

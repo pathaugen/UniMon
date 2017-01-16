@@ -7,24 +7,32 @@
 language: python
 
 python:
-  - "2.6"
-  - "2.7"
-  - "3.2"
-  - "3.3"
-  - "3.4"
-  - "3.5"
-  #- "3.5-dev" # 3.5 development branch
-  - "3.6"
-  #- "3.6-dev" # 3.6 development branch
-  #- "3.7-dev" # 3.7 development branch
-  #- "nightly" # currently points to 3.7-dev
+- '2.6'
+- '2.7'
+- '3.2'
+- '3.3'
+- '3.4'
+- '3.5'
+- '3.6'
+#- "3.5-dev" # 3.5 development branch
+#- "3.6-dev" # 3.6 development branch
+#- "3.7-dev" # 3.7 development branch
+#- "nightly" # currently points to 3.7-dev
 
 # command to install dependencies
 #install:
 #  - pip install .
 #  - pip install -r requirements.txt
 
-# command to run tests
 script:
-  #- pytest
-  - py.test # Works for Python versions 3.5 and below
+- py.test
+
+deploy:
+  provider: gae
+  keyfile: client-secret.json.enc
+  project: pmd-unimon
+  no_promote: true
+
+before_install:
+- openssl aes-256-cbc -K $encrypted_cce5303df6ea_key -iv $encrypted_cce5303df6ea_iv
+  -in client-secret.json.enc -out client-secret.json -d

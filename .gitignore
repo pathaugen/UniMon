@@ -5,6 +5,11 @@ cloudconfig.txt
 # py.test cache
 .cache/
 
+# Most important is to ignore the Travis CI GAE key file:
+client-secret.json
+# Including the encrypted key for showing off automatic deployments
+#client-secret.json.enc
+
 # ---------- ---------- ---------- ---------- ----------
 
 # https://github.com/github/gitignore/blob/master/Python.gitignore
