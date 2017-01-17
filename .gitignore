@@ -5,6 +5,9 @@ cloudconfig.txt
 # py.test cache
 .cache/
 
+# .pyc generally not needed in repo
+*.pyc
+
 # Most important is to ignore the Travis CI GAE key file:
 client-secret.json
 # Including the encrypted key for showing off automatic deployments
